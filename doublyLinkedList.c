@@ -53,6 +53,26 @@ void print(){
     }
     printf("\n");
 };
+
+// Function to delete a node at a given position
+void deleteNode(int position) {
+    struct Node *temp = head; 
+    if (position == 1) { // if the first node is to be deleted
+        head = temp->next; // head points to the second node
+        free(temp); // free the memory of the deleted node
+        return;
+    }
+    int i;
+    for (i = 0; i < position - 2; i++) {
+        temp = temp->next; // temp points to the node before the one to be deleted
+    };
+    struct Node *nodeToDelete = temp->next; // note to be deleted 
+    temp->next = nodeToDelete->next; // bypass the node to be deleted
+    if (nodeToDelete->next != NULL) {
+        nodeToDelete->next->prev = temp; // update the prev pointer of the next node
+    }
+    free(nodeToDelete); // free the memory of the deleted node
+};
 // Function to print the linked list in reverse order
 void reversePrint(){
     struct Node *temp = head;
