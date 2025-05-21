@@ -44,7 +44,7 @@ void printStack() {
         return;
     }
     printf("Stack elements: ");
-    for (int i = top; i >= 0; i--) {
+    for (int i = 0; i <= top; i++) {
         printf("%d ", stack[i]); // print elements from top to bottom
     }
     printf("\n");
