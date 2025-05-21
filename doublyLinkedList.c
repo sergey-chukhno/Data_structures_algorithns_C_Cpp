@@ -26,6 +26,22 @@ void insertAtHead(int x) {
     head = newNode; // update the head to the new node
     printf("Inserted %d\n", x);
 }
+
+void insertAtTail(int x) {
+    struct Node* newNode = getNewNode(x);
+    if (head == NULL) {
+        head = newNode;
+        return;
+    }
+    struct Node* temp = head;
+    while (temp->next != NULL) {
+        temp = temp->next; // traverse to the end
+    }
+    temp->next = newNode; // point the last node's next to the new node
+    newNode->prev = temp; // point the new node's prev to the last node
+    printf("Inserted %d\n", x);
+}
+
 // Function to print the linked list
 // in forward order
 void print(){
@@ -61,6 +77,8 @@ int main() {
     insertAtHead(3);
     insertAtHead(4);
     insertAtHead(5);
+    insertAtTail(6);
+    insertAtTail(7);
     print();
     reversePrint();
     return 0;
