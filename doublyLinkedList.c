@@ -101,5 +101,9 @@ int main() {
     insertAtTail(7);
     print();
     reversePrint();
+    deleteNode(3);
+    print();
+    deleteNode(1);
+    print();
     return 0;
 }
