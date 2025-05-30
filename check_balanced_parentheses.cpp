@@ -1,4 +1,5 @@
-// Check for balanced parenthesis - C++ Implementation
+// check_balanced_parentheses.cpp
+// Checks for balanced parentheses in an expression using a stack in C++. Demonstrates stack-based matching of brackets.
 #include <iostream>
 #include <string>
 #include <vector>

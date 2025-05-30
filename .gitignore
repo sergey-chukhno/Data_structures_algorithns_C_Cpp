@@ -1,0 +1,25 @@
+# Ignore build outputs and binaries
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dll
+*.dylib
+*.obj
+*.class
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.swp
+*.swo
+*.DS_Store
+*.vscode/
+# Ignore all executables in this directory
+bst
+stack_array
+queue_array
+# Ignore any other output files
+*~ 

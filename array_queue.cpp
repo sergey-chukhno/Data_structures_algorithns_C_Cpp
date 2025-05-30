@@ -1,4 +1,5 @@
-// Array-based Queue Implementation - C++ (Non-template version)
+// queue_array.cpp
+// Implements a queue using a dynamic array with circular buffer logic. Supports enqueue, dequeue, and utility operations.
 #include <iostream>
 #include <stdexcept>
 #include <string>

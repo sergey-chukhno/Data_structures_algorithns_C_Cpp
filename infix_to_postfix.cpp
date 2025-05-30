@@ -1,4 +1,5 @@
-// Infix to Postfix Converter - C++ Implementation
+// infix_to_postfix.cpp
+// Converts infix expressions to postfix (Reverse Polish Notation) using a stack-based algorithm in C++.
 #include <iostream>
 #include <string>
 #include <vector>

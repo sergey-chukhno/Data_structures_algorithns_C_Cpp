@@ -1,4 +1,5 @@
-// Linked List-based Queue Implementation - C++
+// queue_linked_list.cpp
+// Implements a queue using a singly linked list. Supports enqueue, dequeue, and various utility operations.
 #include <iostream>
 #include <stdexcept>
 #include <string>
